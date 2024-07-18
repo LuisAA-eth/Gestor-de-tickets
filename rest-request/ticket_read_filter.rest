@@ -1,0 +1,9 @@
+# GET http://localhost:4001/api/tickets?status=closed HTTP/1.1
+
+# GET http://localhost:4001/api/tickets?priority=high HTTP/1.1
+
+# GET http://localhost:4001/api/tickets?priority=high&status=closed HTTP/1.1
+
+# GET http://localhost:4001/api/tickets?priority=low&pageSize=5&page=1 HTTP/1.1
+
+GET http://localhost:4001/api/tickets?search=bug HTTP/1.1

@@ -1,0 +1,44 @@
+{
+  metadata: TypeError: Cannot read properties of undefined (reading 'replace')
+      at auth (file:///Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/middlewares/auth.js:4:44)
+      at Layer.handle [as handle_request] (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/layer.js:95:5)
+      at next (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/route.js:149:13)
+      at Route.dispatch (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/route.js:119:3)
+      at Layer.handle [as handle_request] (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/layer.js:95:5)
+      at /Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/index.js:284:15
+      at Function.process_params (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/index.js:346:12)
+      at next (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/index.js:280:10)
+      at Function.handle (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/index.js:175:3)
+      at router (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/express/lib/router/index.js:47:12),
+  level: 'error',
+  message: "Cannot read properties of undefined (reading 'replace')",
+  timestamp: '2024-04-23T10:02:22.065Z'
+}
+{
+  metadata: SyntaxError: Expected double-quoted property name in JSON at position 171
+      at JSON.parse (<anonymous>)
+      at parse (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/body-parser/lib/types/json.js:92:19)
+      at /Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/body-parser/lib/read.js:128:18
+      at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+      at invokeCallback (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/raw-body/index.js:238:16)
+      at done (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/raw-body/index.js:227:7)
+      at IncomingMessage.onEnd (/Users/carlosazaustre/Documents/CONKERBLOCKS/CURSO_NODE/ticketing-system/node_modules/raw-body/index.js:287:7)
+      at IncomingMessage.emit (node:events:518:28)
+      at endReadableNT (node:internal/streams/readable:1696:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+    expose: true,
+    statusCode: 400,
+    status: 400,
+    body: '{\n' +
+      '  "user": "865b6daf-7191-4a30-8c05-ccf67a73df56",\n' +
+      '  "title": "Ticket #14",\n' +
+      '  "description": "This is a new ticket description",\n' +
+      '  "priority": "low",\n' +
+      '  "status": "open",\n' +
+      '}',
+    type: 'entity.parse.failed'
+  },
+  level: 'error',
+  message: 'Expected double-quoted property name in JSON at position 171',
+  timestamp: '2024-05-30T15:33:33.466Z'
+}
